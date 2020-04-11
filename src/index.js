@@ -13,18 +13,21 @@ function TarjetaFruta() {
 
 
 
-const TarjetaFruta1 = () => (
+const TarjetaFruta1 = (props) => (
     <div>
-        <h1>Titulo de Tarjeta1</h1>
-        <p>parrafo</p>
+        <h1>{props.name}</h1>
+        <p>{props.edad}</p>
     </div>
 )
-
+var comentario = "Este es un comentario"
 const App = () => (
     <div>
         <h1>Titulo de App()</h1>
-        <TarjetaFruta1></TarjetaFruta1>
-    </div>
+        <TarjetaFruta1 name="Alexis" edad={5}></TarjetaFruta1>
+        <hr></hr>
+        <TarjetaFruta1 edad={28}></TarjetaFruta1>
+        <TarjetaFruta1 name={`${comentario}`}></TarjetaFruta1>
+    </div >
 
 )
 
