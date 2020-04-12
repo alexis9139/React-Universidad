@@ -39,6 +39,8 @@ class TarjetaFruta extends React.Component {
         const clases = estadoCantidad ? 'TarjetaFruta-activa' : 'TarjetaFruta'
 
 
+
+
         return (
             <div className={clases}>
                 <h1>{this.props.name}</h1>
@@ -50,6 +52,11 @@ class TarjetaFruta extends React.Component {
             </div>
         )
     }
+
+
+
+
+
 }
 
 

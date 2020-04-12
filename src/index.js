@@ -1,8 +1,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import App2 from './App2'
 
 const root = document.getElementById('root')
 
-ReactDOM.render(<App></App>, root)
+ReactDOM.render(<App2></App2>, root)
