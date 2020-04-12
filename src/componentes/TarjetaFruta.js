@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './TarjetaFruta.css'
 
 class TarjetaFruta extends React.Component {
     constructor(props) {
@@ -35,13 +35,18 @@ class TarjetaFruta extends React.Component {
         })
     }
     render() {
+        const estadoCantidad = this.state.cantidad > 0
+        const clases = estadoCantidad ? 'TarjetaFruta-activa' : 'TarjetaFruta'
+
+
         return (
-            <div>
+            <div className={clases}>
                 <h1>{this.props.name}</h1>
                 <p>cantidad: {this.state.cantidad}</p>
                 <button onClick={this.agregar}>Agregar</button>
                 <button onClick={this.quitar}>Quitar</button>
                 <button onClick={this.limpiar}>Limpiar</button>
+                <p>Precio ${this.props.precio * this.state.cantidad}</p>
             </div>
         )
     }
