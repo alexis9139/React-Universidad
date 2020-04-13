@@ -1,8 +1,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App3 from './App3'
+import App4 from './App4'
 
 const root = document.getElementById('root')
 
-ReactDOM.render(<App3></App3>, root)
+ReactDOM.render(<App4></App4>, root)
